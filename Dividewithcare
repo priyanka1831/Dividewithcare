@@ -1,0 +1,26 @@
+public class Dividewithcare {
+	
+public static void main(String[]args){
+	//declare two variables to store two numbers
+	int a,b,c=0;
+	//accept data from command line
+    try{
+	a=Integer.parseInt(args[0]);
+	b=Integer.parseInt(args[1]);
+
+
+    c=a/b;
+    }catch(ArithmeticException ae)
+    {
+	System.out.println("We can not divide any number with ZERO!!!");
+    }catch(NumberFormatException ne)
+    {
+    	System.out.println("Only number required,not an alphabet");
+    }finally
+    {
+	System.out.println("finally block executed");
+    }
+    System.out.println("Result="+c);
+	
+
+}}
